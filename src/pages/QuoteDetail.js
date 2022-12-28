@@ -32,7 +32,7 @@ const QutoeDetail = () => {
       </div>
     );
   if (error) return <p className='centered'>{error}</p>;
-  if (!loadedQuote.text) return <p>No Quote found</p>;
+  if (!loadedQuote.text) return <p>No Quote found!</p>;
   return (
     <Fragment>
       <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} />
